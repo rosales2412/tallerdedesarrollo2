@@ -1,0 +1,46 @@
+body {
+    animation: colores 5s infinite alternate linear;
+  }
+
+  @keyframes colores{
+    0%{
+        background: #e48bf0;   
+    }
+    25%{
+        background: #37f18b;
+    }
+    50%{
+        background: #31b0fa;
+    }
+    75%{
+        background: #ffd97d;
+    }
+    100%{
+        background: #ff9b85;
+
+    }
+  }
+  ul {
+    width: 25%;
+    height: 70%;
+    background-color: #fadcdc;
+    position: fixed;
+    margin: 20;
+    padding: 0;
+    overflow: auto;
+  }
+  li a {
+    display: block;
+    color: black;
+    padding: 10px 20px;
+  }
+  li a.inicio {
+    background-color: rgb(247, 4, 4);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  li a:hover:not(.inicio) {
+    background-color: rgb(32, 73, 253);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }

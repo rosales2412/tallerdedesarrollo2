@@ -1,0 +1,44 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+  }
+    p{
+        color: red;
+        text-align: center;
+    }
+
+    #para1{
+        font-size: 40px;
+    }
+
+    .seleccionado{
+
+color: green;
+font-size: 30px;
+text-align: center;
+width: 100%;
+
+    }
+
+    h1, p{
+        background-color: aqua;
+        
+
+    }
+    div + p{
+        border: 10px solid purple;
+        margin-bottom: 300px;
+    }
+    link{
+        color: red;
+    }
+a:visited{
+    color: #00ff00
+}
+
+a:hover{
+    background-color: #ff00ff;
+}
+
+a:active{
+color: blue;
+}

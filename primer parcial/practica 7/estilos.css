@@ -1,0 +1,86 @@
+#estatico{
+    position: static;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+#fijo{
+    position: fixed;
+    background-color: aqua;
+    right: 50px;
+    bottom: 50px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+#absoluto{
+    position: absolute;
+    background-color: blueviolet;
+    left: 50px;
+    bottom: 50px;
+    width: 150px;
+    height: 150px;
+
+}
+#grande{
+    background-color: bisque;
+    width: 300px;
+    height: 1300px;
+}
+#pegajoso{
+position: sticky;
+position: -webkit-sticky;
+background-color: coral;
+top: 50px;
+width: 100%;
+height: 200px;
+border: 1px solid;
+}
+
+#relativo{
+    background-color: brown;
+    position: relative;
+    left: 250px;
+    bottom: 250px;
+    width: 200px;
+    height: 200px;
+}
+#absoluto2{
+    position: absolute;
+    background-color: black;
+    top: 50px;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+}
+
+#desbordado1{
+background-color: aquamarine;
+width: 200px;
+height: 65px;
+border: 1px solid black;
+overflow: hidden; 
+}
+#desbordado2{
+background-color: aquamarine;
+width: 200px;
+height: 65px;
+border: 1px solid black;
+overflow: scroll;
+margin-bottom: 300px;
+}
+#desbordado3{
+    background-color: aquamarine;
+    width: 200px;
+    height: 65px;
+    border: 1px solid black;
+    overflow: scroll;
+    margin-bottom: 300px;
+    }
+
+    #alerta{
+        background-color: red !important;
+        margin-bottom: 200px;
+
+    }

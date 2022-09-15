@@ -1,0 +1,125 @@
+body {
+    animation: colores 5s infinite alternate linear;
+}
+
+@keyframes colores{
+    0%{
+        background: #e48bf0;   
+    }
+    25%{
+        background: #37f18b;
+    }
+    50%{
+        background: #31b0fa;
+    }
+    75%{
+        background: #ffd97d;
+    }
+    100%{
+        background: #ff9b85;
+
+    }
+}
+
+.cuadroBlanco {
+    background: white;
+    position: absolute;
+    animation: mueveCuadro 1s infinite;
+}
+
+#cuadroBlanco1 {
+    width: 100px;
+    height: 100px;
+    left: 50px;
+}
+
+#cuadroBlanco2 {
+    width: 100px;
+    height: 100px;
+    left: 200px;
+}
+
+@keyframes mueveCuadro {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+#cuadroRojo {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 350px;
+    animation: moverRojo 10s infinite;
+}
+
+@keyframes moverRojo {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+#cuadroMultiColor {
+    width: 100px;
+    height: 100px;
+    left: 500px;
+    background: red;
+    position: relative;
+    animation: moverMultiColor 1s infinite;
+}
+
+@keyframes moverMultiColor {
+    0%   {top: 0px; left: 500px; background: red;}
+    25%  {top: 0px; left: 600px; background: blue;}
+    50%  {top: 100px; left: 600px; background: yellow;}
+    75%  {top: 100px; left: 500px; background: green;}
+    100% {top: 0px; left: 500px; background: red;}
+}
+
+#circulo {
+    width: 100px;
+    height: 100px;
+    left: 800px;
+    background: purple;
+    position: absolute;
+    animation: crece 5s infinite;
+    border-radius: 50%;
+}
+
+@keyframes crece {
+    0%   {top: 0px; width: 100px; height: 100px;}
+    100% {top: 200px; width: 300px; height: 300px;}
+}
+
+h1 {
+    margin-top: 500px;
+    text-align: center;
+}
+
+.cuadroAnimado {
+    border: 10px solid white;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+}
+
+.gradiente {
+    background-image: linear-gradient(to right, rgb(0, 17, 255) , red, green);
+    background-image: linear-gradient(to left bottom,  rgb(0, 17, 255) , red, green);
+    background-image: linear-gradient(45deg,  rgb(0, 17, 255) , red, green);
+}
+
+#cuadroSombra {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://images.unsplash.com/photo-1661961110372-8a7682543120?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+h3 {
+    text-shadow: 7px 3px 9px #5f37ce;
+}
+
