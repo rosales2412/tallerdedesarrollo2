@@ -1,0 +1,28 @@
+h1{
+    font-size: 3.5em;
+}
+#descripcion {margin-left: 4px; background-color: aqua;}
+
+
+#menu {
+  float: none;
+  width: auto;
+}
+
+#opciones {
+  margin: 0;
+  padding: 0;
+}
+
+.opcionmenu {
+  background: rgb(250, 101, 126);
+  border: 1px solid black;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  #menu {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
