@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculdora Chatgpt</title>
+
+    <style>
+        .calculator {
+          width: 400px;
+          height: 500px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .display {
+          height: 75px;
+          background-color: rgb(98, 255, 203);
+          font-size: 30px;
+          padding-top: 20px;
+          overflow-y:  hidden;
+        }
+        .keys {
+          background-color: rgb(2, 33, 68);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .keys button {
+          width: 75px;
+          height: 75px;
+          margin: 10px;
+          font-size: 24px;
+          border-radius: 36px;
+        }
+        .operators button {
+          background-color: rgb(255, 254, 254);
+        }
+      </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+          <span id="expression">0</span>
+        </div>
+        <div class="keys">
+          <button id="clear">C</button>
+          <button id="backspace">&larr;</button>
+          <button id="divide">/</button>
+          <button id="multiply">*</button>
+          <button id="seven">7</button>
+          <button id="eight">8</button>
+          <button id="nine">9</button>
+          <button id="subtract">-</button>
+          <button id="four">4</button>
+          <button id="five">5</button>
+          <button id="six">6</button>
+          <button id="add">+</button>
+          <button id="one">1</button>
+          <button id="two">2</button>
+          <button id="three">3</button>
+          <button id="zero">0</button>
+          <button id="decimal">.</button>
+          <button id="equals">=</button>
+        </div>
+      </div>
+      <script>
+        const buttons = document.querySelectorAll("button");
+        const expression = document.querySelector("#expression");
+  
+        buttons.forEach((button) => {
+          button.addEventListener("click", (event) => {
+            const value = event.target.innerText;
+  
+            if (value === "C") {
+              expression.innerText = "0";
+            } else if (value === "=") {
+              expression.innerText = eval(expression.innerText);
+            } else if (value === "&larr;") {
+              expression.innerText = expression.innerText.slice(0, -1);
+              if (expression.innerText === "") {
+                expression.innerText = "0";
+              }
+            } else {
+              if (expression.innerText === "0") {
+                expression.innerText = value;
+              } else {
+                expression.innerText += value;
+              }
+            }
+          });
+        });
+      </script>
+</body>
+</html>
