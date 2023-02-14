@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica</title>
+    <style>
+        .all-browsers {
+          margin: 0;
+          padding: 5px;
+          background-color: aquamarine;
+        }
+        .all-browsers > h1, .browser {
+          margin: 10px;
+          padding: 5px;
+        }
+        .browser {
+          background: white;
+        }
+        .browser > h2, p {
+          margin: 4px;
+          font-size: 90%;
+        }
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: normal;
+            background-color: blanchedalmond;
+        }
+        mark{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="html.html">HTML</a>
+        <a href="css.css">CSS</a> 
+        <a href="js.js">JavaScript</a> 
+        <a href="Python.python">Python</a>
+    </nav>
+
+    <section>
+        <h1>Sección 1</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </section>
+
+    <section>
+        <h1>Sección 2</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </section>
+
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        <article class="browser">
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </article>
+
+    <article>
+        <header>
+            <h1>Encabezado</h1>
+            <p>Texto</p>
+        </header>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </article>
+
+    <footer>
+        <p>Author: MAHA</p>
+        <p><a href="mailto:rosalesllanos9@gmail.com">rosalesllanos9@gmail.com</a></p>
+    </footer>
+
+
+    <p>Titulo</p>
+
+    <aside>
+        <p>Esta es una barra lateral.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </aside>
+
+    <p>Más texto</p>
+    <p>Más texto</p>
+
+    <figure>
+        <img src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="Google" width="150px">
+        <figcaption>Fig1. - Google logo.</figcaption>
+    </figure>
+
+    <details>
+        <summary>Este es un resumen</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit deserunt ab molestias cupiditate fuga quibusdam quas accusantium, laboriosam est voluptatibus vel pariatur fugit excepturi laudantium impedit asperiores quam ea maxime!</p>
+    </details>
+      
+    <main>
+        <article>
+            <p>Un artículo</p>
+            <p>Contenido</p>
+            <p>Resaltar partes de un texto es <mark id="mark">importante</mark> relacionado a la info.</p>
+        </article>
+    </main>
+
+    <p>Abierto de las <time>10:00</time> a las  <time>21:00</time> de Lunes a Viernes.</p>
+</body>
+</html>
